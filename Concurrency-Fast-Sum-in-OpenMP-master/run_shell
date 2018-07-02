@@ -1,0 +1,49 @@
+#	run_shell
+#	**if Permission denied, run $chmod +x run_shell
+#	**run command: $./run_shell
+#	Author: Ca11me1ce
+#	Modified Date: Feb 15, 2018
+#	Test sum file
+#	./sum N_value NUM_THREADS
+	
+#!/bin/bash
+
+gcc -o sum sum.c -fopenmp -lm
+
+./sum 10000 1
+./sum 100000 1
+./sum 1000000 1
+./sum 10000000 1
+./sum 100000000 1
+
+./sum 10000 2
+./sum 100000 2
+./sum 1000000 2
+./sum 10000000 2
+./sum 100000000 2
+
+./sum 10000 3
+./sum 100000 3
+./sum 1000000 3
+./sum 10000000 3
+./sum 100000000 3
+
+./sum 10000 4
+./sum 100000 4
+./sum 1000000 4
+./sum 10000000 4
+./sum 100000000 4
+
+./sum 10000 5
+./sum 100000 5
+./sum 1000000 5
+./sum 10000000 5
+./sum 100000000 5
+
+./sum 10000 6
+./sum 100000 6
+./sum 1000000 6
+./sum 10000000 6
+./sum 100000000 6
+
+rm sum
